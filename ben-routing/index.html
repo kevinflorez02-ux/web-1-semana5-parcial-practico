@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM+router</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+    <div class="layout">
+        <header class="layout__header">
+             <h1 class="layout__title">header</h1>
+        </header>
+       <main class="layout__main">
+        <nav id="app-nav" class="nav">
+            <a href="home" class="nav__link">home</a>
+            <a href="about" class="nav__link">about</a>
+            <a href="contac" class="nav__link">contac</a>
+            <a href="services" class="nav__link">services</a>
+
+        </nav>
+         <section id="app-content" class="content">
+
+           <!-- aqui se va a renderizar de manerea dinamica cada una de las listas-->
+
+         </section>
+
+       </main>
+        <footer class="layout__footer">
+            <p class="layout__footer-text">footer</p>
+        </footer>
+    </div>
+    <script src="router.js"></script>
+</body>
+</html>

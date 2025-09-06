@@ -1,0 +1,95 @@
+/*BEM 
+
+BLOCK__ELEMENT--MODIFIER 
+
+QUE ES BEM?
+BEM (Block, Element, Modifier) es una metodología para nombrar clases CSS que facilita la organización y el mantenimiento del código.
+
+Block: Representa el componente principal (ejemplo: menu).
+Element: Es una parte del bloque que cumple una función específica (ejemplo: menu__item).
+Modifier: Indica una variación o estado del bloque o elemento (ejemplo: menu__item--active).
+Su objetivo es crear código CSS más claro, escalable y fácil de entender.
+
+COMO SE DEFINE?
+boton {}
+boton__icono{} elemento
+boton___icono--highlighted{} modificador
+
+beneficios de usar BEM
+1. Claridad: Los nombres de las clases son descriptivos y fáciles de entender.
+2. Mantenibilidad: Facilita la actualización y modificación del código sin afectar otras partes.
+3. Reutilización: Los bloques y elementos pueden ser reutilizados en diferentes contextos.
+4. Evita conflictos: Reduce la probabilidad de conflictos de nombres en CSS.
+5. Facilita la colaboración: Los equipos pueden trabajar juntos de manera más eficiente al seguir una convención común.
+6. Mejora la estructura: Promueve una estructura clara y organizada en el código CSS.           
+
+estilos globales
+
+*/
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body.site{
+    margin: 0;
+    font-family: sans-serif;
+}
+.layout{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+}
+.layout__header{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+.layout_title{
+    margin: 0;
+    font-size: medium;
+
+}
+.layout__footer{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+.layout__footer-text{
+    margin: 0;
+}
+.layout__main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+   min-height: 0;
+}
+.nav{
+    background-color: lightgray;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+}
+.nav__link{
+    text-decoration: none;
+    padding: 8px 16px;
+
+}
+.nav__link:hover,
+.nav__link--active{
+    background: yellowgreen;
+    
+}
+/*bloque content*/
+.content{
+    background: lightpink;
+padding: 16px;
+    overflow-y: auto;
+    min-height: 0;
+}
